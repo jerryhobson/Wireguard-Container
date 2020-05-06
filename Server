@@ -1,0 +1,20 @@
+# *****New Server Set-Up*****
+
+apt update && apt upgrade -y
+clear
+
+#*****installs Cockpit and patches Software Updated Error*****
+apt install cockpit -y
+apt autoremove -y
+systemctl disable network-manager.service
+sudo systemctl stop network-manager.service
+
+#*****Creates User and adds User to SUDO Group*****
+adduser jerryhobson
+usermod -aG sudo jerryhobson
+
+#*****Installs OpenVPN*****
+wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
+echo " Server is Updated"
+reboot
+
