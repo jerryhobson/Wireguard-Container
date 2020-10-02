@@ -1,6 +1,5 @@
 # MYStuff
-NewServer Script can be used to setup a new Ubuntu 20.04 Server with the following:
-#
+NewServer Script can be used to setup a new Ubuntu 20.04 Server with the following
 Cockpit
 New sudo User
 VPN
