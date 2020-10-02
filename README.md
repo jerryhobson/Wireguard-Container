@@ -1,12 +1,13 @@
 # MYStuff
-The Script NewServer can be used to setup a new Ubuntu 20.04 Server with the following--
---Cockpit
---New sudo User
---VPN
---Docker
---Docker Apps
--->Portainer
--->Netdata
+NewServer Script can be used to setup a new Ubuntu 20.04 Server with the following:
+#
+Cockpit
+New sudo User
+VPN
+Docker
+Docker Apps
+Portainer
+>Netdata
 
 Run the following command as ROOT
 
