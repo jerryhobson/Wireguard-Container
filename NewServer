@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# *******************New Server Set-Up**********************
+############################################################
+# Comment or Uncomment the options below.
+# --This script will perform the following--
+
+#> Update and Upgrade Server Packages
+#> Install Cockpit and Patch Network issue
+#> Create new User with sudo privilages (Replace NAME and PASSWORD)
+#> --Script will promt for password--
+#> Install OpenVPN (Press Enter for Default)
+#> Install Docker
+#> Install Netdata
+#> Install Portainer 
+#> -- Press Y if asked--
+
+#*****Update and Upgrade Server*****
+apt update && apt upgrade -y
+clear
+
+#*****installs Cockpit and patches Software Updated Error*****
+apt install cockpit -y
+apt autoremove -y
+systemctl disable network-manager.service
+sudo systemctl stop network-manager.service
+
+#*****Creates User and adds User to SUDO Group*****
+adduser  NAME
+usermod -aG sudo PASSWORD
+
+#*****Installs OpenVPN*****
+#wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
+
+#*****Installs Docker*****
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+#*****Installes NetData*****
+docker run -d --name=netdata \
+  -p 19999:19999 \
+  -v /proc:/host/proc:ro \
+  -v /sys:/host/sys:ro \
+  -v /var/run/docker.sock:/var/run/docker.sock:ro \
+  --cap-add SYS_PTRACE \
+  --security-opt apparmor=unconfined \
+  netdata/netdata
+
+#*****Installs Portainer*****
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+
+echo "Installation is compleate please REBOOT"
+
