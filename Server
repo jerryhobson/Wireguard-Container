@@ -10,8 +10,8 @@ systemctl disable network-manager.service
 sudo systemctl stop network-manager.service
 
 #*****Creates User and adds User to SUDO Group*****
-adduser jerryhobson
-usermod -aG sudo jerryhobson
+adduser USERNAME
+usermod -aG sudo USERNAME
 
 #*****Installs OpenVPN*****
 wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
