@@ -13,5 +13,7 @@ wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmo
 # Feel free to use and edit!
 
 If you want the Docker Installer with Portainer only just download the the docker-only-install.sh
-wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/docker-only-install.sh && chmod +x run.sh && ./run.sh
+******************************************************************
+wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/docker-only-install.sh && chmod +x docker-only-install.sh && ./docker-only-install.sh
+
 
