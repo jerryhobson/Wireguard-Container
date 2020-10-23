@@ -40,7 +40,11 @@ echo "*****Portainer Install*****"
 docker volume create portainer_data
 docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 echo ">>>>Login to Portainer using IP Address:9000<<<<"
-echo "*****Below is your IP Address*****"
-ip -4 addr show ens3 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+sleep 10
+clear
+echo "***Launching WireGuard Docker-Compose File***"
+echo "*********Creating WireGuard Container*********
+docker-compose.yml up -d
+
 
 
