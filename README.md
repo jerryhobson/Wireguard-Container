@@ -6,9 +6,12 @@ My current project is one script that will install the following:
 # 4. Wireguard Docker Container
 *****************************************************************
 I use the following Scripts:
->run.sh >docker-install.sh and >docker-compose.yml
+<run.sh> <docker-install.sh> and <docker-compose.yml>
 *****************************************************************
 # Copy and past into you your cli > 
 wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
 # Feel free to use and edit!
+
+If you want the Docker Installer with Portainer only just download the the docker-only-install.sh
+wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/docker-only-install.sh && chmod +x run.sh && ./run.sh
 
