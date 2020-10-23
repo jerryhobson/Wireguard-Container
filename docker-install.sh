@@ -45,6 +45,21 @@ clear
 echo "***Launching WireGuard Docker-Compose File***"
 echo "*********Creating WireGuard Container*********
 docker-compose.yml up -d
+sleep 4
+clear
+echo "***Wireguard Client Config***"
+echo "*****************************************"
+echo "Client Configurations are found at:" 
+echo "/opt/wireguard-server/config/ ***"
+echo "To View use the command"
+echo "cat /opt/wireguard-server/config/peer{Client}/peer{Client}.conf"
+echo "******************************************"
+sleep 5
+echo "Here are your current Client Configs"
+echo "******************************************"
+sleep 2
+ls /opt/wireguard-server/config/p*
+
 
 
 
