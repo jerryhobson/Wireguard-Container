@@ -10,5 +10,5 @@ I use the following Scripts:
 *****************************************************************
 # Copy and past into you your cli > 
 wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
-Feel free to use and edit!
+# Feel free to use and edit!
 
