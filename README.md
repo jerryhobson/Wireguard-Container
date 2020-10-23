@@ -10,7 +10,7 @@ I use the following Scripts:
 *****************************************************************
 # Copy and past into you your cli > 
 wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
-# Feel free to use and edit!
+# Docker with Portainer Only:
 
 If you want the Docker Installer with Portainer only just download the the docker-only-install.sh
 ******************************************************************
