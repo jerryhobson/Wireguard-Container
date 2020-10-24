@@ -43,7 +43,7 @@ echo ">>>>Login to Portainer using IP Address:9000<<<<"
 sleep 10
 clear
 echo "***Launching WireGuard Docker-Compose File***"
-echo "*********Creating WireGuard Container*********
+echo "*********Creating WireGuard Container*********"
 docker-compose.yml up -d
 sleep 4
 clear
