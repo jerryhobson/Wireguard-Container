@@ -8,7 +8,7 @@ My current project is one script that will install the following:
 I use the following Scripts:
 <run.sh> <docker-install.sh> and <docker-compose.yml>
 *****************************************************************
-# Copy and past into you your cli > 
+# Copy and past into your cli > 
 wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
 # Docker with Portainer Only:
 
