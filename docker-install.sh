@@ -42,7 +42,7 @@ docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.
 echo ">>>>Login to Portainer using IP Address:9000<<<<"
 sleep 10
 clear
-echo "***Please Edit docker-compose.yml file(see instructions at top of file)***"
+echo "***Please Edit docker-compose.yml file(see instructions in the ReadeME)***"
 sleep 2
 echo "***Launching nano to edit file***"
 sleep 2
