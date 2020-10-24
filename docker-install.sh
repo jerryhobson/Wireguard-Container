@@ -44,7 +44,7 @@ sleep 10
 clear
 echo "***Launching WireGuard Docker-Compose File***"
 echo "*********Creating WireGuard Container*********"
-docker-compose.yml up -d
+docker-compose up -d
 sleep 4
 clear
 echo "***Wireguard Client Config***"
