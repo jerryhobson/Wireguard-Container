@@ -12,10 +12,11 @@ I use the following Scripts:
 get https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
 ## The install will launch the nano editor to make changes to the docker-compose.yml file.
 ###Change the Time Zone (TZ=(America/City)-Example America/Chicage for Central Time.
-###Option Change SERVERURL=(FQDN)-Example myvpn.mysite.com 
+*****************************************************************
+**Option Change SERVERURL=(FQDN)-Example myvpn.mysite.com 
 # Docker with Portainer Only:
 
-If you want the Docker Installer with Portainer only just download the the docker-only-install.sh
+## If you want the Docker Installer with Portainer only just download the the docker-only-install.sh
 ******************************************************************
 wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/docker-only-install.sh && chmod +x docker-only-install.sh && ./docker-only-install.sh
 
