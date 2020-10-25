@@ -11,9 +11,9 @@ I use the following Scripts:
 # Copy and past into your CLI > 
 get https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
 ## The install will launch the nano editor to make changes to the docker-compose.yml file.
-**Change the Time Zone (TZ=(America/City)-Example America/Chicage for Central Time.
+**Change the Time Zone (TZ=(Country/City)-Example America/Chicage for USA Central Time.
 *****************************************************************
-**Option Change SERVERURL=(FQDN)-Example myvpn.mysite.com 
+**Option Change SERVERURL=(FQDN)-Example myvpn.mysite.com / If you leave blank WireGuard will use your (VSP) Public IP Address.
 # Docker with Portainer Only:
 
 ## If you want the Docker Installer with Portainer only just copy the below command and past intp your CLI>
