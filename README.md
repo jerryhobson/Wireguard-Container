@@ -21,5 +21,5 @@ get https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod
 ******************************************************************
 wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/docker-only-install.sh && chmod +x docker-only-install.sh && ./docker-only-install.sh
 ******************************************************************
-# This has been tesed on both Ububtu 18.04 and 20.04 Server editions on Digital Ocean and Vultr. It runs fine on the $5.00 instance.
+## This has been tesed on both Ububtu 18.04 and 20.04 Server editions on Digital Ocean and Vultr. It runs fine on the $5.00 instance.
 
