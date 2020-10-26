@@ -6,7 +6,7 @@ This project is automated and execpt for edting the docker-compose file it will 
 # 3. Portainer
 # 4. Wireguard Docker Container
 *****************************************************************
-I use the following Scripts:
+I use the following scripts that I have written. (All commaneds have been taken from the official Wikis or project sources) 
 <run.sh> <docker-install.sh> and <docker-compose.yml>
 *****************************************************************
 # Copy and past into your CLI > 
@@ -17,7 +17,7 @@ get https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod
 **Option Change SERVERURL=(FQDN)-Example myvpn.mysite.com / If you leave blank WireGuard will use your (VSP) Public IP Address.
 # Docker with Portainer Only:
 
-## If you want the Docker Installer with Portainer only just copy the below command and past intp your CLI>
+## If you want the Docker Installer with Portainer only just copy the below command and past into your CLI>
 ******************************************************************
 wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/docker-only-install.sh && chmod +x docker-only-install.sh && ./docker-only-install.sh
 
