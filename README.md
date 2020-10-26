@@ -11,7 +11,7 @@ I use the following scripts that I have written. (All commaneds have been taken 
 *****************************************************************
 # Copy and past into your CLI > 
 get https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
-## The install will launch the nano editor to make changes to the docker-compose.yml file.
+## The nano editor will be launched durring the install process to make changes to the docker-compose.yml file.
 **Change the Time Zone (TZ=(Country/City)-Example America/Chicage for USA Central Time.
 *****************************************************************
 **Option Change SERVERURL=(FQDN)-Example myvpn.mysite.com / If you leave blank WireGuard will use your (VSP) Public IP Address.
