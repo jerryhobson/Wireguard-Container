@@ -1,5 +1,6 @@
 # MyStuff
 ## My current project is one script that will install the following:
+This project is automated and execpt for edting the docker-compose file it will install all packages and run without prrompts. You can veiw the files indvidually and modify them if you want. if you wnat me to make changes just drop me a line.
 # 1. Docker.io
 # 2. Docker-Compose
 # 3. Portainer
