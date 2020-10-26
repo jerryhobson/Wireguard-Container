@@ -1,6 +1,6 @@
 # Wireguard-Container
-## My current project is one script that will install the following:
-This project is automated and execpt for edting the docker-compose file it will install all packages and run without prrompts. You can veiw the files indvidually and modify them if you want. If you wnat me to make changes just drop me a line.
+## The project is one command that will install the following:
+Note: This project is automated and execpt for edting the docker-compose file it will install all packages and run without prrompts. You can veiw the files indvidually and modify them if you want. If you want me to make changes just drop me a line.
 # 1. Docker.io
 # 2. Docker-Compose
 # 3. Portainer
