@@ -10,7 +10,7 @@ I use the following scripts that I have written. (All commaneds have been taken 
 <run.sh> <docker-install.sh> and <docker-compose.yml>
 *****************************************************************
 # Copy and past into your CLI
-wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
+ wget https://raw.githubusercontent.com/jerryhobson/MYStuff/master/run.sh && chmod +x run.sh && ./run.sh
 ## The nano editor will be launched durring the install process to make changes to the docker-compose.yml file.
 **Change the Time Zone (TZ=(Country/City)-Example America/Chicage for USA Central Time.
 *****************************************************************
