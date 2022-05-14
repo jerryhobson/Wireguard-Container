@@ -17,7 +17,7 @@ clear
 echo "******Installing Docker and Docker-Compose*****"
 echo "***********************************************"
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
@@ -33,12 +33,12 @@ clear
 echo "*****Testing Docker*****"
 echo "************************"
 sleep 3
-docker run hello-world
+sudo docker run hello-world
 sleep 3
 clear
 echo "*****Portainer Install*****"
-docker volume create portainer_data
-docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+sudo docker volume create portainer_data
+sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 sleep 3
 clear
 echo ">>>>Login to Portainer using [IP Address]:9000<<<<"
